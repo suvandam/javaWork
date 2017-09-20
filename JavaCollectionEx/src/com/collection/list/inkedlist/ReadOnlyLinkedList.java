@@ -1,22 +1,22 @@
-package com.collection.arraylist;
+package com.collection.list.inkedlist;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
-public class ReadOnlyArrayList {
+public class ReadOnlyLinkedList {
 
-	//How to Make Collection like ArrayList Read Only in Java?
+	//How to Make Collection like LinkedList Read Only in Java?
 
 	public static void main(String[] args) {
 		//creating read only Collection in Java
-        Collection readOnlyCollection = Collections.unmodifiableCollection(new ArrayList<String>());
+        Collection readOnlyCollection = Collections.unmodifiableCollection(new LinkedList<String>());
         readOnlyCollection.add("Sydney Sheldon"); //raises UnSupportedOperation exception
     
-        //making existing ArrayList readonly in Java
-        ArrayList readableList = new ArrayList();
+        //making existing LinkedList readonly in Java
+        LinkedList readableList = new LinkedList();
         readableList.add("Jeffrey Archer");
         readableList.add("Khalid Hussain");
       

@@ -1,15 +1,15 @@
-package com.collection.arraylist;
+package com.collection.list.inkedlist;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class ArrayListBasic {
+public class LinkedListBasic {
 
 	public static void main(String[] args) {
 
-		//declaring and Initializing an arrayList of Primitive Type
-		ArrayList<String> friendsList=new ArrayList<String>();
+		//declaring and Initializing an LinkedList of Primitive Type
+		LinkedList<String> friendsList=new LinkedList<String>();
 		
 		//Adding data to collection
 		friendsList.add("sam");
@@ -19,12 +19,12 @@ public class ArrayListBasic {
 		//Checking the size of collection
 		System.out.println("Size of "+friendsList.getClass().getName()+" is "+friendsList.size());
 		
-		//Iterating through the arraylist
+		//Iterating through the LinkedList
 		for(int i=0;i<friendsList.size();i++) {
 			System.out.println(friendsList.get(i));
 		}
 		
-		//Check if a value exist in an ArrayList
+		//Check if a value exist in an LinkedList
 		System.out.println("Is lily a friend ? "+friendsList.contains("lily"));
 		
 		//Sort

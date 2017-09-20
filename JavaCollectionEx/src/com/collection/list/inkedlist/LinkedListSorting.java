@@ -1,14 +1,17 @@
-package com.collection.arraylist;
+package com.collection.list.inkedlist;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
+
+import com.model.Employee;
+
 import java.util.Collections;
 import java.util.Iterator;
 
-public class ArrayListSorting {
+public class LinkedListSorting {
 
 	public static void main(String[] args) {
 
-		ArrayList<Employee> empList=new ArrayList<>();
+		LinkedList<Employee> empList=new LinkedList<>();
 		
 		empList.add(new Employee(102,"Ram"));
 		empList.add(new Employee(101,"John"));
